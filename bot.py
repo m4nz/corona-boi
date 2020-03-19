@@ -2,7 +2,7 @@
 import discord
 import requests
 import json
-import datetime
+#import datetime
 
 with open('config.json') as f:
   data = json.load(f)
