@@ -18,7 +18,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
-    print('Currently on: ' + len(list(client.guilds)) + " Guilds")
+    print('Currently on: ' + str(len(list(client.guilds))) + " Guilds")
     await client.change_presence(status=discord.Status.online, activity=discord.Game("Type '$cupdate' to get updates!"))
 
 @client.event
