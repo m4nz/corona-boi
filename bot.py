@@ -14,7 +14,7 @@ import os
 
 TOKEN = os.environ.get('TOKEN')
 client = discord.Client()
-print(TOKEN)
+print(str(TOKEN))
 
 @client.event
 async def on_ready():
