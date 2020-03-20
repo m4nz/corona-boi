@@ -12,7 +12,7 @@ import os
 ####################################
 #Uncomment above section if using the config.json for the token
 
-TOKEN = os.environ.get('TOKEN')
+TOKEN = os.environ['TOKEN']
 client = discord.Client()
 
 @client.event
