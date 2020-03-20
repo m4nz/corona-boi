@@ -12,9 +12,8 @@ import os
 ####################################
 #Uncomment above section if using the config.json for the token
 
-TOKEN = os.environ.get('TOKEN')
+TOKEN = str(os.environ.get('TOKEN'))
 client = discord.Client()
-print(str(TOKEN))
 
 @client.event
 async def on_ready():
