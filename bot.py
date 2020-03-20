@@ -12,12 +12,13 @@ import os
 ####################################
 #Uncomment above section if using the config.json for the token
 
-TOKEN = os.environ.get("TOKEN")
+TOKEN = os.environ.get('TOKEN')
 client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print('Logged in as {0.user}'.format(client))
+    print('Currently on: ' + len(list(client.guilds)) + " Guilds")
     await client.change_presence(status=discord.Status.online, activity=discord.Game("Type '$cupdate' to get updates!"))
 
 @client.event
