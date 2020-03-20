@@ -1,13 +1,18 @@
 import discord
 import requests
 import json
+import os
 #import datetime
 
-with open('config.json') as f:
-  data = json.load(f)
+####################################
+#with open('config.json') as f:
+  #data = json.load(f)
 
-TOKEN = str(data['token'])
+#TOKEN = str(data['token'])
+####################################
+#Uncomment above section if using the config.json for the token
 
+TOKEN = os.environ.get("TOKEN")
 client = discord.Client()
 
 @client.event
