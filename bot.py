@@ -27,7 +27,7 @@ async def on_message(message):
         embed = discord.Embed(title="COVID-19 Stats", colour=discord.Colour(0xd0021b), url="https://www.worldometers.info/coronavirus/", description="this is the most up to date data relating to COVID-19\n\n")
 
         embed.set_thumbnail(url="https://upload.wikimedia.org/wikipedia/commons/8/82/SARS-CoV-2_without_background.png")
-        embed.set_footer(text="we're fucked lol (not really but that's what the media says)")
+        embed.set_footer(text="Bot created by ManZ#1234")
 
         embed.add_field(name="**__Worldwide__**", value="Cases: " + str(allData['cases']) + "\n\nDeaths: " + str(allData['deaths']) + "\n\nRecovered: "  + str(allData['recovered']), inline=True)
         embed.add_field(name="**__USA__**", value="Cases: " + str(usData['cases']) + " (**Today: " + str(usData['todayCases']) + "**)\n\nDeaths: " + str(usData['deaths']) + " (**Today: " + str(usData['todayDeaths']) + "**)\n\nRecovered: " + str(usData['recovered']), inline=True)
