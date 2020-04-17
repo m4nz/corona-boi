@@ -68,11 +68,11 @@ async def on_message(message):
 
 def get_data(type, state):
     if type == "USA":
-        covidApi = "https://corona.lmao.ninja/countries/usa" 
+        covidApi = "https://corona.lmao.ninja/v2/countries/usa" 
     if type == "ALL":
-        covidApi = "https://corona.lmao.ninja/all" 
+        covidApi = "https://corona.lmao.ninja/v2/all" 
     if type == "STATE":
-        covidApi = "https://corona.lmao.ninja/states/" + state.lower()
+        covidApi = "https://corona.lmao.ninja/v2/states/" + state.lower()
         data = requests.get(covidApi)
         state_info = data.json()
         if 'message' in state_info:
